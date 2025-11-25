@@ -1,0 +1,88 @@
+station_clean,zip_code,LocationID,Zone
+1 Av,10009,4,Alphabet City
+103 St,10029,74,East Harlem North
+110 St,10026,42,Central Harlem North
+116 St,10025,151,Manhattan Valley
+116 St-Columbia University,10027,166,Morningside Heights
+125 St,10027,166,Morningside Heights
+135 St,10030,116,Hamilton Heights
+137 St-City College,10031,152,Manhattanville
+14 St-Union Sq,10003,79,East Village
+14 St/6 Av,10011,68,East Chelsea
+14 St/8 Av,10011,68,East Chelsea
+145 St,10039,42,Central Harlem North
+155 St,10032,244,Washington Heights South
+157 St,10032,244,Washington Heights South
+163 St-Amsterdam Av,10032,244,Washington Heights South
+168 St,10032,244,Washington Heights South
+175 St,10033,243,Washington Heights North
+18 St,10014,249,West Village
+181 St,10033,243,Washington Heights North
+190 St,10040,128,Inwood Hill Park
+191 St,10040,128,Inwood Hill Park
+2 Av,10009,4,Alphabet City
+207 St,10034,127,Inwood
+215 St,10040,128,Inwood Hill Park
+23 St,10010,107,Gramercy
+28 St,10001,186,Penn Station/Madison Sq West
+3 Av,10003,79,East Village
+33 St,10016,170,Murray Hill
+34 St-Herald Sq,10001,186,Penn Station/Madison Sq West
+34 St-Hudson Yards,10001,186,Penn Station/Madison Sq West
+34 St-Penn Station,10001,186,Penn Station/Madison Sq West
+47-50 Sts-Rockefeller Ctr,10111,161,Midtown Center
+49 St,10019,163,Midtown North
+5 Av/53 St,10022,229,Sutton Place/Turtle Bay North
+5 Av/59 St,10022,229,Sutton Place/Turtle Bay North
+50 St,10019,163,Midtown North
+57 St,10019,163,Midtown North
+57 St-7 Av,10019,163,Midtown North
+59 St-Columbus Circle,10023,239,Upper West Side South
+66 St-Lincoln Center,10023,239,Upper West Side South
+68 St-Hunter College,10065,237,Upper East Side South
+7 Av,10011,68,East Chelsea
+72 St,10023,239,Upper West Side South
+77 St,10075,262,Yorkville East
+79 St,10075,262,Yorkville East
+8 St-NYU,10012,211,SoHo
+81 St-Museum of Natural History,10024,238,Upper West Side North
+86 St,10024,238,Upper West Side North
+96 St,10128,263,Yorkville West
+Astor Pl,10003,79,East Village
+Bowery,10002,148,Lower East Side
+Bowling Green,10004,13,Battery Park City
+Broad St,10005,87,Financial District North
+Broadway-Lafayette St/Bleecker St,10012,211,SoHo
+Brooklyn Bridge-City Hall/Chambers St,10013,45,Chinatown
+Bryant Pk/5 Av,10018,100,Garment District
+Canal St,10013,45,Chinatown
+Cathedral Pkwy,10025,151,Manhattan Valley
+Central Park North,10039,42,Central Harlem North
+Chambers St,10013,45,Chinatown
+Chambers St/WTC/Park Pl/Cortlandt,10007,231,TriBeCa/Civic Center
+Christopher St-Sheridan Sq,10014,249,West Village
+City Hall,10007,231,TriBeCa/Civic Center
+Delancey St/Essex St,10002,148,Lower East Side
+Dyckman St,10040,128,Inwood Hill Park
+East Broadway,10002,148,Lower East Side
+Franklin St,10013,45,Chinatown
+Fulton St,10006,88,Financial District South
+Grand Central-42 St,10017,162,Midtown East
+Grand St,10002,148,Lower East Side
+Harlem-148 St,10039,42,Central Harlem North
+Houston St,10002,148,Lower East Side
+Inwood-207 St,10034,127,Inwood
+Lexington Av-53 St/51 St,10022,229,Sutton Place/Turtle Bay North
+Lexington Av/59 St,10022,229,Sutton Place/Turtle Bay North
+Lexington Av/63 St,10065,237,Upper East Side South
+Marble Hill-225 St,10034,127,Inwood
+Prince St,10012,211,SoHo
+RI Tramway,10007,231,TriBeCa/Civic Center
+Rector St,10006,88,Financial District South
+Roosevelt Island,10044,202,Roosevelt Island
+South Ferry/Whitehall St,10004,13,Battery Park City
+Spring St,10012,211,SoHo
+Times Sq-42 St/42 St,10036,50,Clinton West
+W 4 St-Wash Sq,10012,211,SoHo
+WTC Cortlandt,10007,231,TriBeCa/Civic Center
+Wall St,10005,87,Financial District North

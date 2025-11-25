@@ -1,0 +1,115 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "psycopg2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psycopg2",
+        "description": "psycopg2",
+        "detail": "psycopg2",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def get_connection():\n    \"\"\"\n    Use DATABASE_URL environment variable for production (Render/Railway),\n    fallback to localhost for local development.\n    \"\"\"\n    database_url = os.environ.get('DATABASE_URL')\n    if database_url:\n        # Production: use the DATABASE_URL\n        # Fix for Render's postgres:// vs postgresql:// issue\n        if database_url.startswith(\"postgres://\"):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "load_summary_from_db",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def load_summary_from_db():\n    \"\"\"\n    Load data from view result and table taxi_zones.\n    \"\"\"\n    conn = get_connection()\n    query = \"\"\"\n        SELECT\n            r.date,\n            lower(r.bucket) AS period,\n            tz.locationid::int AS \"LocationID\",",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def index():\n    dates = sorted(SUMMARY[\"date\"].unique())\n    return render_template(\"index.html\", dates=dates)\n@app.route(\"/api/busyness\")\ndef api_busyness():\n    date_str = request.args.get(\"date\")\n    period = request.args.get(\"period\")\n    if not date_str or not period:\n        return jsonify({\"error\": \"Missing date or period\"}), 400\n    key_date = date_str",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "api_busyness",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def api_busyness():\n    date_str = request.args.get(\"date\")\n    period = request.args.get(\"period\")\n    if not date_str or not period:\n        return jsonify({\"error\": \"Missing date or period\"}), 400\n    key_date = date_str\n    period = period.lower()\n    df = SUMMARY[(SUMMARY[\"date\"] == key_date) & (SUMMARY[\"period\"] == period)].copy()\n    if df.empty:\n        return jsonify([])",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\ndef get_connection():\n    \"\"\"\n    Use DATABASE_URL environment variable for production (Render/Railway),\n    fallback to localhost for local development.\n    \"\"\"\n    database_url = os.environ.get('DATABASE_URL')\n    if database_url:\n        # Production: use the DATABASE_URL\n        # Fix for Render's postgres:// vs postgresql:// issue",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "SUMMARY",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "SUMMARY = load_summary_from_db()\n@app.route(\"/\")\ndef index():\n    dates = sorted(SUMMARY[\"date\"].unique())\n    return render_template(\"index.html\", dates=dates)\n@app.route(\"/api/busyness\")\ndef api_busyness():\n    date_str = request.args.get(\"date\")\n    period = request.args.get(\"period\")\n    if not date_str or not period:",
+        "detail": "app",
+        "documentation": {}
+    }
+]
